@@ -238,8 +238,8 @@ createWU_SingleDateURL <- function (station,
     base_url <- 'http://www.wunderground.com/weatherstation/WXDailyHistory.asp?'
     final_url <- paste0(base_url,
                         'ID=', station,
+                        '&day=', d,
                         '&month=', m,
-                        '&day=', d, 
                         '&year=', y,
                         '&format=1')    
   }
@@ -373,8 +373,8 @@ createWU_Custom_URL <- function (station,
     base_url <- 'http://www.wunderground.com/weatherstation/WXDailyHistory.asp?'
     final_url <- paste0(base_url,
                         'ID=', station,
-                        '&month=', m,
                         '&day=', d, 
+                        '&month=', m,
                         '&year=', y,
                         '&dayend=', de,
                         '&monthend=', me,
